@@ -27,6 +27,8 @@ const store = new Vuex.Store({
 })
 ```
 
+That initial state object (where we set `count: 0`) is important for Vue [reactivity](https://vuejs.org/v2/guide/reactivity.html#Change-Detection-Caveats). We won't get into that more here, but just know that you need to provide your initial state up front.
+
 Now, you can access the state object as `store.state`, and trigger a state change with the `store.commit` method:
 
 ``` js
